@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מנהל משימות</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>מנהל משימות</h1>
+        
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="הוסף משימה חדשה...">
+            <button onclick="addTask()">הוסף</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">הכל</button>
+            <button class="filter-btn" data-filter="active">פעיל</button>
+            <button class="filter-btn" data-filter="completed">הושלם</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
